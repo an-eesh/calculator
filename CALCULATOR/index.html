@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Play&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- js -->
+    <script src="./calculator.js"></script>
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="main">
+        <h2>CALCULATOR</h2>
+
+            <div class="cal">
+                <div class="cal-dis">
+                    <div class="data">
+                        <input type="text" id="result">
+                    </div>
+                    <div class="result">
+                        <input type="text" id="output">
+                    </div>
+                </div>
+
+                <div class="key">
+                    <table>
+                        <tr>
+                            <td><button onclick="clearNum()">AC</button></td>
+                            <td><button onclick="back()"><-</button></td>
+                            <td><button style="background-color:rgb(188, 184, 184);  width: 75px;" onclick="display('/')">&divide;</button></td>
+                            <td><button class="op-btn" style="background-color: rgb(188, 184, 184);  width: 75px;" onclick="display('*')">x</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><button onclick="display(7)">7</button></td>
+                            <td><button onclick="display(8)">8</button></td>
+                            <td><button onclick="display(9)">9</button></td>
+                            <td><button class="op-btn" style="background-color: rgb(188, 184, 184);  width: 75px;" onclick="display('-')">-</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><button onclick="display(4)">4</button></td>
+                            <td><button onclick="display(5)">5</button></td>
+                            <td><button onclick="display(6)">6</button></td>
+                            <td rowspan="2"><button class="op-btn" style="background-color:rgb(188, 184, 184); height: 100px; width: 75px;" onclick="display('+')">+</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><button onclick="display(1)">1</button></td>
+                            <td><button onclick="display(2)">2</button></td>
+                            <td><button onclick="display(3)">3</button></td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><button style="width: 160px;" onclick="display(0)">0</button></td>
+                            <td colspan="1"><button onclick="display('.')">.</button></td>
+                            <td><button class="op-btn" style="background-color: rgb(188, 184, 184); height: 80px;  width: 75px;" onclick="evaluation()">=</button></td>
+                            
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+    </div>
+</body>
+</html>

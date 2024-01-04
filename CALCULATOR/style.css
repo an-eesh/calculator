@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    /* background-color: aquamarine; */
+    /* background-image: url('https://images.unsplash.com/photo-1488441770602-aed21fc49bd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #101011; */
+
+    background: rgb(255,222,3);
+background: linear-gradient(90deg, rgba(255,222,3,0.8940826330532213) 0%, rgba(0,0,0,1) 0%, rgba(142,140,140,1) 28%, rgba(245,255,246,1) 45%, rgba(220,220,220,1) 55%, rgba(115,115,115,1) 69%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+   
+}
+h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px #282828;
+}
+.main{
+    margin-top: 30px;
+}
+.main .cal
+{
+    width :350px;
+    height: 650px;
+    border: 2px solid;
+    background-color:#101011;
+    margin:40px auto;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
+    /* border-color:white; */
+}
+.main .cal .data{
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
+.main .cal .cal-dis{
+    width: 320px;
+    height: 200px;
+    /* background-color: white; */
+    background-color: black;
+    /* border: 0.5px solid; */
+    border-color: white;
+    margin:5px auto;
+    border-radius: 20px;
+    position: relative;
+}
+.main .result input
+{
+    /* background-color: blue; */
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    border: 0px;
+    right: 10px;
+    top: 120px;
+    color: white;
+    background-color: black;
+}
+.main .cal .data input{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: 0px;
+   
+}
+.cal table{
+    margin: auto;
+    width: 320px;
+    height: 370px;
+    margin-top: 20px;
+    /* border: 1px solid white; */
+    /* padding: 20px; */
+    background-color: rgb(15, 14, 14);
+}
+.cal table td{
+    padding:5px 1px;
+    text-align: center;
+    /* background-color:blanchedalmond; */
+}
+.cal table button{
+    width: 80px;
+    height: 60px;
+    background-color: black;
+    color: blue;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-weight: 700;
+}
+.cal table button:hover{
+    cursor: pointer;
+}
+.cal table button:active{
+    background-color: white;
+}
+
+.op-btn:active{
+    background-color: black;
+}
